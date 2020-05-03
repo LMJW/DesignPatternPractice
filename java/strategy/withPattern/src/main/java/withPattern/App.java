@@ -13,5 +13,10 @@ public class App {
 
     mallard.performFly();
     mallard.performQuack();
+
+    // should crash
+    // Duck redhead = new RedHeadDuck();
+    // redhead.performFly();
+    // redhead.performQuack();
   }
 }
