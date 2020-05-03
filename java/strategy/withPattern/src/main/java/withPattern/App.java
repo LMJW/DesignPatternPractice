@@ -18,5 +18,14 @@ public class App {
     // Duck redhead = new RedHeadDuck();
     // redhead.performFly();
     // redhead.performQuack();
+
+    // model duck example
+    // change its performfly behavior
+    Duck model = new ModelDuck();
+    model.performFly();
+    model.performQuack();
+
+    model.setFlyBehavior(new FlyRocketPowered());
+    model.performFly();
   }
 }
