@@ -10,5 +10,12 @@ public class App {
 
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
+    var nyStore = new NYPizzaStore();
+    var pizza = nyStore.orderPizza("cheese");
+    System.out.println("I ordered a New York style Cheese pizza, " + pizza.getName() + "\n");
+
+    var cStore = new ChicagoPizzaStore();
+    pizza = cStore.orderPizza("other");
+    System.out.println("I ordered a Chicago style other pizza, " + pizza.getName() + "\n");
   }
 }
