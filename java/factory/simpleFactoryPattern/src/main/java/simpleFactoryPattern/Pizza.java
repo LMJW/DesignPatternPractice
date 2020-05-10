@@ -1,23 +1,11 @@
 package simpleFactoryPattern;
 
-import java.util.ArrayList;
-
 /** Make the pizza class to be abstract so all the concrete pizza types can be derived from it. */
 public abstract class Pizza {
   String name;
-  String dough;
-  String sauce;
-  ArrayList<String> toppings = new ArrayList<String>();
+  IngredientFactory ingredientFactory;
 
-  public void prepare() {
-    System.out.println("Preparing " + name);
-    System.out.println("Tossing dough...");
-    System.out.println("Adding sauce...");
-    System.out.println("Adding toppings...");
-    for (String topping : toppings) {
-      System.out.println(String.format("    %s", topping));
-    }
-  }
+  public abstract void prepare();
 
   public void bake() {
     System.out.println("Bake for 25 mins at 350");
