@@ -26,6 +26,10 @@ public class App {
     remote.undo();
     remote.undo();
 
+    var macro = new MacroCommand(lightOn, doorOpen);
+    remote.setCommand(2, true, macro);
+    remote.buttonPress(2, true);
+    remote.undo();
     System.out.println(remote);
   }
 }

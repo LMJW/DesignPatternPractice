@@ -7,7 +7,7 @@ public class TVOnCommand implements Command {
     tv.on();
   }
 
-  public void undo(){
+  public void undo() {
     tv.off();
   }
 }
