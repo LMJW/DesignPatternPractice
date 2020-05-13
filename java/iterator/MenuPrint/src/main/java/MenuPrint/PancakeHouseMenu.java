@@ -2,7 +2,7 @@ package MenuPrint;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
   ArrayList<MenuItem> menuItems;
 
   public PancakeHouseMenu() {
