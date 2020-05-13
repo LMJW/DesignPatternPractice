@@ -1,8 +1,9 @@
 package MenuPrint;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class PancakeHouseMenuIterator implements Iterator {
+public class PancakeHouseMenuIterator implements Iterator<MenuItem> {
   ArrayList<MenuItem> menuItems;
   int position = 0;
 
@@ -14,7 +15,7 @@ public class PancakeHouseMenuIterator implements Iterator {
     return (position < menuItems.size());
   }
 
-  public Object next() {
+  public MenuItem next() {
     var ret = menuItems.get(position);
     position += 1;
     return ret;

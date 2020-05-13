@@ -1,5 +1,7 @@
 package MenuPrint;
 
+import java.util.Iterator;
+
 public class DinerMenu {
   static final int MAX_ITEMS = 6;
   int itemsCount = 0;
@@ -26,7 +28,7 @@ public class DinerMenu {
     return menuItems;
   }
 
-  public Iterator createIterator() {
+  public Iterator<MenuItem> createIterator() {
     return new DinerMenuIterator(menuItems);
   }
 }
