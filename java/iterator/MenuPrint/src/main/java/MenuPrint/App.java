@@ -12,7 +12,8 @@ public class App {
     System.out.println(new App().getGreeting());
     var pancakeHouseMenu = new PancakeHouseMenu();
     var dinerMenu = new DinerMenu();
-    var waitress = new Waitress(pancakeHouseMenu, dinerMenu);
+    var cafeMenu = new CafeMenu();
+    var waitress = new Waitress(pancakeHouseMenu, dinerMenu, cafeMenu);
 
     waitress.printMenu();
   }
