@@ -2,7 +2,7 @@ package MenuPrint;
 
 import java.util.Iterator;
 
-public class MenuItem extends MenuComponent implements Menu {
+public class MenuItem extends MenuComponent {
   String name;
   String description;
   double price;

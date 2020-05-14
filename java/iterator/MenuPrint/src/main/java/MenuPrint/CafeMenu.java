@@ -3,7 +3,7 @@ package MenuPrint;
 import java.util.Hashtable;
 import java.util.Iterator;
 
-public class CafeMenu extends MenuComponent implements Menu {
+public class CafeMenu extends MenuComponent {
   Hashtable<String, MenuComponent> menuItems;
 
   public CafeMenu() {

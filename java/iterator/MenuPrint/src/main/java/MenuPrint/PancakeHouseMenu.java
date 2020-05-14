@@ -3,7 +3,7 @@ package MenuPrint;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PancakeHouseMenu extends MenuComponent implements Menu {
+public class PancakeHouseMenu extends MenuComponent {
   ArrayList<MenuComponent> menuItems;
 
   public PancakeHouseMenu() {

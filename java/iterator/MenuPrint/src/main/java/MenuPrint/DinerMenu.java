@@ -2,7 +2,7 @@ package MenuPrint;
 
 import java.util.Iterator;
 
-public class DinerMenu extends MenuComponent implements Menu {
+public class DinerMenu extends MenuComponent {
   static final int MAX_ITEMS = 6;
   int itemsCount = 0;
   MenuComponent[] mComponents;
