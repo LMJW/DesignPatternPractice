@@ -2,15 +2,15 @@ package MenuPrint;
 
 import java.util.Iterator;
 
-public class DinerMenuIterator implements Iterator<MenuItem> {
-  MenuItem[] items;
+public class DinerMenuIterator implements Iterator<MenuComponent> {
+  MenuComponent[] items;
   int position = 0;
 
-  public DinerMenuIterator(MenuItem[] items) {
+  public DinerMenuIterator(MenuComponent[] items) {
     this.items = items;
   }
 
-  public MenuItem next() {
+  public MenuComponent next() {
     var ret = items[position];
     position += 1;
     return ret;

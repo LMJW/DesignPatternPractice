@@ -1,6 +1,8 @@
 package MenuPrint;
 
-public class MenuItem {
+import java.util.Iterator;
+
+public class MenuItem extends MenuComponent implements Menu {
   String name;
   String description;
   double price;
@@ -24,5 +26,14 @@ public class MenuItem {
   /** @return the price */
   public double getPrice() {
     return price;
+  }
+
+  public void print() {
+    System.out.println(name + " | " + description + " ; " + price);
+  }
+
+  @Override
+  public Iterator<MenuComponent> createIterator() {
+    return new NullIterator();
   }
 }

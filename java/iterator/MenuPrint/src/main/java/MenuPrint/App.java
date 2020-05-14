@@ -13,7 +13,11 @@ public class App {
     var pancakeHouseMenu = new PancakeHouseMenu();
     var dinerMenu = new DinerMenu();
     var cafeMenu = new CafeMenu();
-    var waitress = new Waitress(pancakeHouseMenu, dinerMenu, cafeMenu);
+    var allMenu = new AllMenus("All Menus", "all the menus are here");
+    allMenu.add(pancakeHouseMenu);
+    allMenu.add(cafeMenu);
+    cafeMenu.add(dinerMenu);
+    var waitress = new Waitress(allMenu);
 
     waitress.printMenu();
   }
